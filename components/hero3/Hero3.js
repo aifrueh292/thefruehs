@@ -19,10 +19,10 @@ const Hero3 = (props) => {
                             <div className="col-xl-6  col-12">
                                 <div className="wpo-static-hero-inner">
                                     <div data-swiper-parallax="300" className="slide-title">
-                                        <h2>Sophia & Oliver</h2>
+                                        <h2>Elidia & Alexander</h2>
                                     </div>
                                     <div data-swiper-parallax="400" className="slide-text">
-                                        <p>We Are Getting Married November 15,2024</p>
+                                        <p>We are getting married August 15th, 2026</p>
                                     </div>
                                     <div className="clearfix"></div>
                                     <div className="shape">
