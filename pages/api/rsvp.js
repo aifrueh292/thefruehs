@@ -15,6 +15,9 @@ function validatePayload(body = {}) {
   const meal = safeValue(body.meal);
   const message = safeValue(body.message);
 
+  const validGuestCounts = ['1', '2', '3', '4'];
+  const validMeals = ['Steak', 'Chicken', 'Fish', 'Vegetarian'];
+
   if (!name) {
     errors.name = 'Name is required.';
   }
@@ -45,6 +48,8 @@ function validatePayload(body = {}) {
 
   if (!guest) {
     errors.guest = 'Number of guests is required.';
+  } else if (!validGuestCounts.includes(guest)) {
+    errors.guest = 'Number of guests must be between 1 and 4.';
   }
 
   if (!attend) {
@@ -53,6 +58,8 @@ function validatePayload(body = {}) {
 
   if (!meal) {
     errors.meal = 'Meal preference is required.';
+  } else if (!validMeals.includes(meal)) {
+    errors.meal = 'Meal preference selection is invalid.';
   }
 
   return {

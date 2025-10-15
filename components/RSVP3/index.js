@@ -4,6 +4,9 @@ import shape1 from '/public/images/contact/4.png'
 import shape2 from '/public/images/contact/3.png'
 import Image from 'next/image';
 
+const GUEST_OPTIONS = ['1', '2', '3', '4'];
+const MEAL_OPTIONS = ['Steak', 'Chicken', 'Fish', 'Vegetarian'];
+
 const initialFormState = {
     name: '',
     email: '',
@@ -24,7 +27,19 @@ const RSVP3 = (props) => {
 
     const [validator] = useState(() => new SimpleReactValidator({
         className: 'errorMessage',
-        autoForceUpdate: { forceUpdate: () => forceUpdate((prev) => prev + 1) }
+        autoForceUpdate: { forceUpdate: () => forceUpdate((prev) => prev + 1) },
+        validators: {
+            guestCount: {
+                message: 'Please select a guest count between 1 and 4.',
+                rule: (value) => GUEST_OPTIONS.includes(value),
+                required: true,
+            },
+            mealChoice: {
+                message: 'Please choose a valid meal preference.',
+                rule: (value) => MEAL_OPTIONS.includes(value),
+                required: true,
+            },
+        },
     }));
 
     const changeHandler = e => {
@@ -184,14 +199,16 @@ const RSVP3 = (props) => {
                                                     value={forms.guest}
                                                     className="form-control"
                                                     name="guest">
-                                                    <option value="">Number Of Guests</option>
-                                                    <option value="1">01</option>
-                                                    <option value="2">02</option>
-                                                    <option value="3">03</option>
-                                                    <option value="4">04</option>
-                                                    <option value="5">05</option>
+                                                    <option value="" disabled hidden>
+                                                        Number Of Guests
+                                                    </option>
+                                                    {GUEST_OPTIONS.map((count) => (
+                                                        <option key={count} value={count}>
+                                                            {count}
+                                                        </option>
+                                                    ))}
                                                 </select>
-                                                {validator.message('guest', forms.guest, 'required')}
+                                                {validator.message('guest', forms.guest, 'required|guestCount')}
                                             </div>
                                             <div className="col-lg-12 col-md-12 col-12">
                                                 <div>
@@ -214,14 +231,16 @@ const RSVP3 = (props) => {
                                                         value={forms.meal}
                                                         className="form-control"
                                                         name="meal">
-                                                        <option value="">Meal Preferences</option>
-                                                        <option value="Chicken Soup">Chicken Soup</option>
-                                                        <option value="Motton Kabab">Motton Kabab</option>
-                                                        <option value="Chicken BBQ">Chicken BBQ</option>
-                                                        <option value="Mix Salad">Mix Salad</option>
-                                                        <option value="Beef Ribs">Beef Ribs </option>
+                                                        <option value="" disabled hidden>
+                                                            Meal Preferences
+                                                        </option>
+                                                        {MEAL_OPTIONS.map((option) => (
+                                                            <option key={option} value={option}>
+                                                                {option}
+                                                            </option>
+                                                        ))}
                                                     </select>
-                                                    {validator.message('meal', forms.meal, 'required')}
+                                                    {validator.message('meal', forms.meal, 'required|mealChoice')}
                                                 </div>
                                             </div>
                                             <div className="col-lg-12 col-md-12 col-12">
