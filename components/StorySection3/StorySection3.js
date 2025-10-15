@@ -22,8 +22,8 @@ const StorySection3 = (props) => {
                                 </div>
                                 <div className="wpo-story-content">
                                     <div className="wpo-story-content-inner">
-                                        <span>15 June, 2014</span>
-                                        <h2>How we meet</h2>
+                                        <span>July 10, 2020</span>
+                                        <h2>How We Met</h2>
                                         <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
                                             Enim
                                             tortor, faucibus netus orci donec volutpat adipiscing.</p>
@@ -40,8 +40,8 @@ const StorySection3 = (props) => {
                                 </div>
                                 <div className="wpo-story-content">
                                     <div className="wpo-story-content-inner">
-                                        <span>15 June, 2014</span>
-                                        <h2>He proposed, I said yes</h2>
+                                        <span>August 15, 2022</span>
+                                        <h2>He Proposed</h2>
                                         <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
                                             Enim
                                             tortor, faucibus netus orci donec volutpat adipiscing.</p>
@@ -58,8 +58,8 @@ const StorySection3 = (props) => {
                                 </div>
                                 <div className="wpo-story-content">
                                     <div className="wpo-story-content-inner">
-                                        <span>15 June, 2014</span>
-                                        <h2>Our Engagement Day</h2>
+                                        <span>November 21, 2022</span>
+                                        <h2>We Moved In</h2>
                                         <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
                                             Enim
                                             tortor, faucibus netus orci donec volutpat adipiscing.</p>
