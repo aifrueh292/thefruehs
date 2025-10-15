@@ -13,7 +13,7 @@ const CoupleSection2 = (props) => {
                     <div className="row align-items-center">
                         <div className="col col-xl-3 col-lg-4 col-12">
                             <div className="text-grid">
-                                <h3>Sophia Miles</h3>
+                                <h3>Elidia Guerrero</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor vitae nisl.
                                     fringilla pellesque amet tempus.</p>
                                 <div className="social">
@@ -36,7 +36,7 @@ const CoupleSection2 = (props) => {
                         </div>
                         <div className="col col-xl-3 col-lg-4 col-12">
                             <div className="text-grid">
-                                <h3>Oliver Zonas</h3>
+                                <h3>Alexander Frueh</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor vitae nisl.
                                     fringilla pellesque amet tempus.</p>
                                 <div className="social">

@@ -44,7 +44,7 @@ const Header2 = (props) => {
                       </ul>
                     </li>
                     <li><Link onClick={ClickHandler} href="/gallery">Gallery</Link></li>
-                    <li><Link onClick={ClickHandler} href="/rsvp">RSVP</Link></li>
+                    <li><Link onClick={ClickHandler} href="/#RSVP">RSVP</Link></li>
                     <li className="menu-item-has-children">
                       <Link onClick={ClickHandler} href="/blog">Blog</Link>
                       <ul className="sub-menu">
@@ -86,7 +86,7 @@ const Header2 = (props) => {
                       </div>
                     </div>
                   </div>
-                  <Link className="theme-btn" href="/rsvp"><span className="text">Attend Now</span> <span className="mobile">
+                  <Link className="theme-btn" href="/#RSVP"><span className="text">Attend Now</span> <span className="mobile">
                     <i className="fi flaticon-user"></i>
                   </span></Link>
                 </div>

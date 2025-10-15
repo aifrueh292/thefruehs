@@ -20,7 +20,7 @@ const Footer = (props) => {
                         <div className="col col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
-                                    <a className="logo" href="index">Mawhub</a>
+                                    <a className="logo" href="/">Mawhub</a>
                                 </div>
                                 <p>We can’t wait to see all of our beloved friends and relatives at our wedding.</p>
                                 <ul>
@@ -49,14 +49,14 @@ const Footer = (props) => {
                                 </div>
                                 <div className="link-wrap">
                                     <ul>
-                                        <li><Link onClick={ClickHandler} href="/about">About</Link></li>
-                                        <li><Link onClick={ClickHandler} href="/story">Story</Link></li>
-                                        <li><Link onClick={ClickHandler} href="/rsvp">RSVP</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/#couple">About</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/#story">Story</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/#RSVP">RSVP</Link></li>
                                     </ul>
                                     <ul>
-                                        <li><Link onClick={ClickHandler} href="/gallery">Gallery</Link></li>
-                                        <li><Link onClick={ClickHandler} href="/rsvp">Get Quote</Link></li>
-                                        <li><Link onClick={ClickHandler} href="/rsvp">Contact</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/#gallery">Gallery</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/#RSVP">Get Quote</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/#RSVP">Contact</Link></li>
                                     </ul>
                                 </div>
                             </div>

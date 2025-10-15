@@ -9,21 +9,21 @@ import Image from 'next/image'
 
 const Events = [
     {
-        title: 'The Reception',
-        li1: 'Monday, 25 Sep, 2024 1:00 PM – 4:30 PM',
-        li2: 'Estern Star Plaza, Road 123, USA',
+        title: 'The Rehearsal',
+        li1: 'Friday, August 14, 2026',
+        li2: 'Location:TBD',
         sImg: sImg1,
     },
     {
-        title: 'The Ceremony',
-        li1: 'Monday, 25 Sep, 2024 1:00 PM – 4:30 PM',
-        li2: 'Estern Star Plaza, Road 123, USA',
+        title: 'The Wedding',
+        li1: 'Saturday, August 15, 2026',
+        li2: 'Location:TBD',
         sImg: sImg2,
     },
     {
-        title: 'Wedding Party',
-        li1: 'Monday, 25 Sep, 2024 1:00 PM – 4:30 PM',
-        li2: 'Estern Star Plaza, Road 123, USA',
+        title: 'The Taco Truck',
+        li1: 'Saturday, August 15, 2026',
+        li2: 'Location:TBD',
         sImg: sImg3,
     },
 

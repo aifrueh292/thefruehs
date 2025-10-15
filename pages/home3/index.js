@@ -9,7 +9,6 @@ import RSVP3 from '../../components/RSVP3';
 import BrideGrooms from '../../components/BrideGrooms/BrideGrooms';
 import CtaSection from '../../components/CtaSection/CtaSection';
 import EventSectionS2 from '../../components/EventSectionS2/EventSectionS2';
-import BlogSection from '../../components/BlogSection/BlogSection';
 import Footer2 from '../../components/footer2/Footer2';
 import Scrollbar from '../../components/scrollbar'
 
@@ -28,7 +27,6 @@ const HomePage3 = () => {
             <BrideGrooms tClass={'pt-0'} />
             <CtaSection ctClass={'wpo-cta-section-s2'} />
             <EventSectionS2 />
-            <BlogSection blogClass={'section-bg'}/>
             <Footer2 />
             <Scrollbar />
         </Fragment>

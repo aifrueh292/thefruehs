@@ -16,10 +16,10 @@ const Hero2 = (props) => {
                                 <div className="wpo-static-hero-inner">
                                     <div className="shape-1"><Image src={shape1} alt="" /></div>
                                     <div data-swiper-parallax="300" className="slide-title">
-                                        <h2>Sophia & Oliver</h2>
+                                        <h2>Elidia & Alexander</h2>
                                     </div>
                                     <div data-swiper-parallax="400" className="slide-text">
-                                        <p>We Are Getting Married November 15,2024</p>
+                                        <p>We Are Getting Married August 15, 2026</p>
                                     </div>
                                     <div className="wpo-wedding-date">
                                         <div className="clock-grids">
