@@ -11,45 +11,6 @@ const menus = [
         title: 'Home',
         link: '/',
     },
-    {
-        id: 6,
-        title: 'Blog',
-        link: '/blog',
-        submenu: [
-            {
-                id: 61,
-                title: 'Blog',
-                link: '/blog'
-            },
-            {
-                id: 62,
-                title: 'Blog Left sidebar',
-                link: '/blog-left-sidebar'
-            },
-            {
-                id: 63,
-                title: 'Blog full width',
-                link: '/blog-fullwidth'
-            },
-            {
-                id: 64,
-                title: 'Blog single',
-                link: '/blog-single/You-must-need-a-great-photographer.'
-            },
-            {
-                id: 65,
-                title: 'Blog single Left sidebar',
-                link: '/blog-single-left-sidebar/You-must-need-a-great-photographer.'
-            },
-            {
-                id: 66,
-                title: 'Blog single full width',
-                link: '/blog-single-fullwidth/You-must-need-a-great-photographer.'
-            },
-        ]
-    }
-
-
 ]
 
 
