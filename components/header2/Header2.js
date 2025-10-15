@@ -32,14 +32,8 @@ const Header2 = (props) => {
                 <div id="navbar" className="collapse navbar-collapse navigation-holder">
                   <button className="menu-close"><i className="ti-close"></i></button>
                   <ul className="nav navbar-nav mb-2 mb-lg-0">
-                    <li className="menu-item-has-children">
-                      <Link onClick={ClickHandler} href="/home" >Home</Link>
-                      <ul className="sub-menu">
-                        <li><Link onClick={ClickHandler} href="/home">Home style 1</Link></li>
-                        <li><Link onClick={ClickHandler} href="/home2">Home style 2</Link></li>
-                        <li><Link onClick={ClickHandler} href="/home3">Home style 3</Link></li>
-                        <li><Link onClick={ClickHandler} href="/home4">Home style 4</Link></li>
-                      </ul>
+                    <li>
+                      <Link onClick={ClickHandler} href="/" >Home</Link>
                     </li>
                     <li><Link onClick={ClickHandler} href="/about">about</Link></li>
                     <li className="menu-item-has-children">
