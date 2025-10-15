@@ -8,6 +8,7 @@ function validatePayload(body = {}) {
 
   const name = safeValue(body.name);
   const email = safeValue(body.email);
+  const phone = safeValue(body.phone);
   const attending = safeValue(body.attending);
   const guest = safeValue(body.guest);
   const attend = safeValue(body.attend);
@@ -24,6 +25,15 @@ function validatePayload(body = {}) {
     const emailRegex = /[^\s@]+@[^\s@]+\.[^\s@]+/;
     if (!emailRegex.test(email)) {
       errors.email = 'Email must be valid.';
+    }
+  }
+
+  if (!phone) {
+    errors.phone = 'Phone number is required.';
+  } else {
+    const phoneRegex = /^\+?[\d\s().-]{7,}$/;
+    if (!phoneRegex.test(phone)) {
+      errors.phone = 'Phone number must be valid.';
     }
   }
 
@@ -50,6 +60,7 @@ function validatePayload(body = {}) {
     payload: {
       name,
       email,
+      phone,
       attending: attending.toLowerCase(),
       guest,
       attend,
@@ -104,11 +115,12 @@ export default async function handler(req, res) {
   });
 
   const recipients = ['alexander@thefruehs.com', 'elidiaguer@icloud.com'];
-  const { name, email, attending, guest, attend, meal, message } = payload;
+  const { name, email, phone, attending, guest, attend, meal, message } = payload;
 
   const mailContent = `New RSVP Submission\n\n`
     + `Name: ${name}\n`
     + `Email: ${email}\n`
+    + `Phone: ${phone}\n`
     + `Attending: ${attending === 'yes' ? 'Yes' : 'No'}\n`
     + `Guests: ${guest}\n`
     + `Attending Events: ${attend}\n`

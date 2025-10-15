@@ -7,6 +7,7 @@ import Image from 'next/image';
 const initialFormState = {
     name: '',
     email: '',
+    phone: '',
     attending: '',
     guest: '',
     attend: '',
@@ -125,6 +126,23 @@ const RSVP3 = (props) => {
                                                     className="form-control"
                                                     placeholder="Your Email" />
                                                 {validator.message('email', forms.email, 'required|email')}
+                                            </div>
+                                            <div className="col-lg-12 col-md-12 col-12">
+                                                <label className="form-label" htmlFor="phone">
+                                                    Phone Number
+                                                </label>
+                                                <input
+                                                    id="phone"
+                                                    value={forms.phone}
+                                                    type="tel"
+                                                    name="phone"
+                                                    autoComplete="tel"
+                                                    onBlur={(e) => changeHandler(e)}
+                                                    onChange={(e) => changeHandler(e)}
+                                                    className="form-control"
+                                                    placeholder="(555) 123-4567"
+                                                />
+                                                {validator.message('phone', forms.phone, 'required|phone')}
                                             </div>
                                             <div className="col-lg-12 col-md-12 col-12">
                                                 <div className="radio-buttons">
